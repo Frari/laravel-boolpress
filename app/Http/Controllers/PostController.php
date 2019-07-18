@@ -17,7 +17,7 @@ class PostController extends Controller
   }
 
   public function postInCategory($slug){
-    $Category = Category::where('slug', $slug)->first();
+    $category = Category::where('slug', $slug)->first();
     if(empty($category)){
       abort(404);
     }

@@ -6,7 +6,7 @@
   @forelse ($posts as $post)
       <div class="card mt-4">
         <div class="card-header">
-          <a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a>
+          <a href="{{route('posts.show', $post->slug)}}">{{$post->title}}</a>
         </div>
         <div class="card-body">
           <blockquote class="blockquote mb-0">
