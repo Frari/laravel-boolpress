@@ -12,7 +12,8 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/posts/{slug}', 'PostController@show')->name('post.show');
+Route::get('/posts/{slug}', 'PostController@show')->name('posts.show');
+Route::get('/cstegory/{slug}', 'PostController@postInCategory')->name('posts.category');
 
 Auth::routes();
 
