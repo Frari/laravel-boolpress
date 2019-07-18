@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/posts/{slug}', 'PostController@show')->name('post.show');
 
 Auth::routes();
 
